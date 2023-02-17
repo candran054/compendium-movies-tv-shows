@@ -8,16 +8,15 @@ export default function Navbar() {
       link: "/",
     },
     {
-      title: "Fixtures",
-      link: "/fixtures",
+      title: "Trending",
+      link: "/trending",
     },
     {
-      title: "Transfer",
-      link: "/transfer",
+      title: "Movies",
+      link: "/movies",
     },
     {
-      title: "Standing",
-      link: "/standing",
+      title: "TV Show",
     },
     {
       title: "Explore",
@@ -26,20 +25,20 @@ export default function Navbar() {
 
   const subMenu = [
     {
-      title: "Club",
+      title: "Most popular movies",
     },
     {
-      title: "Player",
+      title: "Most popular kid movies",
     },
     {
-      title: "Coach",
+      title: "In theatres",
     },
   ];
 
   const [exploreDrop, setExploreDrop] = useState(false);
 
   return (
-    <div className="flex w-full justify-center gap-16 bg-secondary py-3">
+    <div className="flex w-full justify-center gap-16 py-3">
       {LINK.map((item) => (
         <>
           {item.title === "Explore" ? (
@@ -57,9 +56,9 @@ export default function Navbar() {
                 alt="dropdown"
               />
               {exploreDrop && (
-                <div className="absolute bg-secondary translate-y-16 py-2 px-14 shadow-md">
+                <div className="absolute bg-secondary translate-y-16 py-1 px-5 shadow-md rounded-md">
                   {subMenu.map((item) => (
-                    <p key={item.title} className="nav-link py-[2px]">
+                    <p key={item.title} className="nav-sub py-[2px]">
                       {item.title}
                     </p>
                   ))}

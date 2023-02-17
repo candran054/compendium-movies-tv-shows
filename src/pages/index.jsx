@@ -1,11 +1,12 @@
 import { Navbar } from "./components/navbar";
-import League from "./league/leagueHome";
+import MoviesHome from "./home/moviesHome";
+import League from "./home/moviesHome";
 
 export default function Home() {
   return (
-    <div className="bg-white w-full justify-center h-screen">
+    <div className="w-full justify-center h-screen bg-main">
       <Navbar />
-      <League />
+      <MoviesHome />
     </div>
   );
 }
