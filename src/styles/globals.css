@@ -10,6 +10,9 @@
 
 @layer components {
   .nav-link {
-    @apply font-semibold text-main cursor-pointer;
+    @apply font-semibold text-lg text-main cursor-pointer;
+  }
+  .nav-sub {
+    @apply font-semibold text-lg text-secondary cursor-pointer;
   }
 }
