@@ -1,6 +1,5 @@
-import { Navbar } from "./components/navbar";
+import { Navbar } from "../components/navbar";
 import MoviesHome from "./home/moviesHome";
-import League from "./home/moviesHome";
 
 export default function Home() {
   return (
